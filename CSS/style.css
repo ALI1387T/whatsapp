@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "yekan";
+    src: url("../font/iranyekanwebregular.woff")format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "yekan";
+    user-select: none;
+}
+
+.contaiter {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.add{
+    width: 30%;
+    height: 100%;
+}
+.chatList {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.chatList .head {
+    height: 14%;
+    border-bottom: 2px solid #222d34;
+}
+
+.chatList .head .menu {
+    height: 55%;
+    background-color: #202c33;
+}
+
+.chatList .head .menu #profile-photo {
+    border-radius: 50%;
+    margin: 7px;
+    width: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+.chatList .head .menu #menu-icon {
+    float: left;
+    font-size: 22px;
+    margin: 10px;
+    color: #8696a0;
+}
+
+.chatList .head .menu #menu-icon i {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.chatList .head .search-bar {
+    height: 45%;
+    background-color: #111b21;
+    font-size: 0;
+}
+
+.chatList .head .search-bar #search-icon {
+    background-color: #202c33;
+    color: #8696a0;
+    height: 74%;
+    position: relative;
+    font-size: 15px;
+    padding: 10px;
+    top: 3px;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.chatList .head .search-bar input {
+    width: 85%;
+    height: 75%;
+    margin: 6px 0px 7px 9px;
+    border-radius: 7px 0px 0px 7px;
+    border: none;
+    background-color: #202c33;
+    color: white;
+    outline: 0px;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+.chatList .head .search-bar input::placeholder {
+    color: #8696a0;
+}
+
+.chatList .head .search-bar input:focus::placeholder {
+    color: rgba(255, 255, 255, 0);
+}
+
+.chatList .head .search-bar #filter-icon {
+    color: #8696a0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chatList .list {
+    height: 86%;
+    background-color: #111b21;
+}
+.chatList .list ul{
+    list-style: none;
+}
+.chatList .list ul .group{
+    height: 70px;
+    width: 98%;
+    border-bottom: 1px solid #222d34;
+    padding: 8px;
+    padding-right: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.chatList .list ul .group:hover{
+    background-color: #36454d;
+}
+.chatList .list ul .group #groupIcon{
+    width: 50px;
+    border-radius: 50%;
+}
+.chatList .list ul .group #groupName{
+    color: #e9edef;
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    font-size:20px ;
+}
+.chatList .list ul .group #lastMessage{
+    color: #e9edef;
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+.chatList .list ul .group #numberOfMessages{
+    color:#111b21;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 35px;
+    background-color: #00a884;
+    padding: 3px;
+    font-size: 15px;
+    padding-bottom: 1px;
+    border-radius: 50px;
+}
+.chatList .list ul .group #time{
+    color: #03a380;
+    position: absolute; 
+    left: 5px;
+    top: 15px;
+    display: inline-block;
+    font-size: 14px;
+}
+.chatPreview {
+    width: 70%;
+    height: 100%;
+    background-color: #222e35;
+    border-right: 2px solid #313d45;
+}
+
+.chatPreview img {
+    width: 30%;
+    height: 76%;
+    position: absolute;
+    left: 17%;
+    bottom: 1%;
+    -webkit-user-drag: none;
+}

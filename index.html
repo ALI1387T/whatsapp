@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="shortcut icon" href="images/whatsapp-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="contaiter">
+        <div class="add" hidden>
+            <form>
+                <label for="photo">عکس</label>
+                <input id="photo" type="file" autocomplete="off"><br>
+
+                <label for="name">نام گروه</label>
+                <input id="name" type="text"><br>
+
+                <label for="Message">آخرین پیام</label>
+                <input id="Message" type="text"><br>
+
+                <label for="count">تعداد پیام</label>
+                <input id="count" type="number"><br>
+
+                <label for="timed">زمان</label>
+                <input id="timed" type="text"><br>
+
+                <input id="sent" type="button" value="ساختن">
+            </form>
+        </div>
+        <div class="chatList">
+            <div class="head">
+                <div class="menu">
+                    <img id="profile-photo" src="images/profile-photo.jpg">
+                    <div id="menu-icon">
+                        <i class="far fa-circle"></i>
+                        <i id="addbtn" class="fa-regular fa-plus"></i>
+                        <i id="morebtn" class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                </div>
+                <div class="search-bar">
+                    <i id="search-icon" class="fa fa-search"></i>
+                    <input id="searchinput" type="text" placeholder="جست و جو کنید یا گفت و گوی جدیدی آغاز کنید">
+                    <i id="filter-icon" class="fa fa-filter"></i>
+                </div>
+            </div>
+            <div class="list">
+                <ul class="ul">
+                    <li class="group">
+                        <img id="groupIcon" src="images/profile-photo.jpg">
+                        <h4 id="groupName">گروه علی</h4>
+                        <p id="time">۱۶:۱۵</p>
+                        <h5 id="lastMessage">علی: سلام</h5>
+                        <p id="numberOfMessages">۵۴</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="chatPreview">
+            <img src="images/whatsapp-main.png">
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
